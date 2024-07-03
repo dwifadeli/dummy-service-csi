@@ -10,7 +10,7 @@ import (
 
 var DB *sql.DB
 
-func Connect() {
+func ConnectPostgres() {
     host := config.GetEnv("DB_HOST", "localhost")
     port := config.GetEnv("DB_PORT", "5432")
     user := config.GetEnv("DB_USER", "user")
